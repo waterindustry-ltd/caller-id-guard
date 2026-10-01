@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Caller ID Guard</title>
+<style>
+  :root {
+    --bg: #F6F6FC;
+    --card: #FFFFFF;
+    --text: #22223A;
+    --muted: #5B5B72;
+    --accent: #5B5BD6;
+    --border: #E2E2F0;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  .wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 48px 20px 80px;
+  }
+  header {
+    margin-bottom: 32px;
+  }
+  .app-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin: 0 0 8px;
+  }
+  h1 {
+    font-size: 30px;
+    margin: 0 0 8px;
+    color: var(--text);
+  }
+  .meta {
+    font-size: 14px;
+    color: var(--muted);
+    margin: 0;
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: 0 1px 3px rgba(20,20,50,0.04);
+  }
+  h2 {
+    font-size: 19px;
+    margin: 32px 0 12px;
+    color: var(--text);
+    border-top: 1px solid var(--border);
+    padding-top: 24px;
+  }
+  .card h2:first-of-type { border-top: none; padding-top: 0; margin-top: 0; }
+  h3 { font-size: 16px; margin: 20px 0 8px; }
+  p { margin: 0 0 14px; color: var(--text); }
+  ul, ol { margin: 0 0 14px; padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  strong { color: var(--text); }
+  a { color: var(--accent); text-decoration: none; word-break: break-word; }
+  a:hover { text-decoration: underline; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0 20px;
+    font-size: 14px;
+  }
+  th, td {
+    text-align: left;
+    padding: 10px 12px;
+    border: 1px solid var(--border);
+    vertical-align: top;
+  }
+  th {
+    background: var(--bg);
+    font-weight: 600;
+  }
+  footer {
+    margin-top: 32px;
+    text-align: center;
+    font-size: 13px;
+    color: var(--muted);
+  }
+  code {
+    background: var(--bg);
+    padding: 2px 6px;
+    border-radius: 6px;
+    font-size: 13px;
+  }
+  @media (max-width: 600px) {
+    .card { padding: 24px 18px; }
+    h1 { font-size: 24px; }
+    table, thead, tbody, th, td, tr { display: block; }
+    th { border-bottom: none; }
+    td { border-top: none; }
+    tr { margin-bottom: 12px; border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="app-name">Caller ID Guard</p>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Effective date: October 1, 2026 &middot; Published by Nước Sạch</p>
+  </header>
+
+  <div class="card">
+    <p>Caller ID Guard ("the App", "we", "us") is developed and published by <strong>Nước Sạch</strong>. This
+    Privacy Policy explains what information the App processes, how it is used, and who it may be shared
+    with, so that you can make an informed decision about using the App.</p>
+    <p>Package name: <code>com.callerid.guard.aurora</code>. Contact: <a href="mailto:minhhang68930@gmail.com">minhhang68930@gmail.com</a>.</p>
+    <p>This Policy applies to all versions and variants of Caller ID Guard.</p>
+
+    <h2>1. Data processed on your device (not sent to our servers)</h2>
+    <p>Caller ID Guard performs its core caller-ID, spam-call-blocking, and dialer functions directly on your
+    device. The following data is read and processed <strong>on-device only</strong> and is <strong>not
+    uploaded to or stored on any server operated by us</strong>:</p>
+    <ul>
+      <li><strong>Call log</strong> (<code>READ_CALL_LOG</code>) — to show your call history (All / Missed /
+      Incoming / Outgoing) and to power caller-ID lookups for incoming/outgoing numbers.</li>
+      <li><strong>Phone state and call control</strong> (<code>READ_PHONE_STATE</code>,
+      <code>ANSWER_PHONE_CALLS</code>, <code>CALL_PHONE</code>, <code>MANAGE_OWN_CALLS</code>) — to let the App
+      act as your dialer: place calls, answer or decline calls, and show the in-call screen.</li>
+      <li><strong>Contacts</strong> (<code>READ_CONTACTS</code>, <code>WRITE_CONTACTS</code>) — to display
+      caller names from your address book and to let you view, add, or edit contacts from within the App.</li>
+      <li><strong>Notification content</strong> (Notification Access) — used by the "Unseen" feature to read
+      incoming message/notification previews without marking them as seen. This data is read and displayed
+      locally and is not transmitted to us.</li>
+    </ul>
+    <p>Because this data never leaves your device to reach servers we operate, we do not collect it, and it is
+    not included in Google Play's Data Safety "collected" declarations for this app. It stays on your phone
+    and is removed if you uninstall the App or clear its app data.</p>
+
+    <h3>Special device roles the App requests</h3>
+    <ul>
+      <li><strong>Default phone app / in-call service</strong> — required so the App can show the in-call
+      screen and act as your dialer.</li>
+      <li><strong>Call-screening service</strong> — required so the App can automatically block or reject
+      incoming calls from numbers you add to your block list.</li>
+      <li><strong>Notification listener</strong> — required for the "Unseen" message-preview feature described
+      above.</li>
+      <li><strong>Full-screen incoming-call intent</strong> — required to show the full-screen incoming-call UI
+      when your device is locked.</li>
+    </ul>
+    <p>You can revoke the default-dialer role, notification access, or any runtime permission at any time from
+    your device Settings; doing so may disable the related feature.</p>
+
+    <h2>2. Information collected by third-party services</h2>
+    <p>The App uses the following third-party software development kits (SDKs), which operate independently of
+    the on-device data described in Section 1 and <strong>may collect and transmit data to their respective
+    providers</strong>:</p>
+    <table>
+      <thead><tr><th>Service</th><th>Purpose</th><th>Data typically collected</th></tr></thead>
+      <tbody>
+        <tr><td>Google Firebase Analytics</td><td>Understand app usage and feature engagement</td><td>App interactions, device/advertising identifiers, diagnostics</td></tr>
+        <tr><td>Google Firebase Crashlytics</td><td>Detect and diagnose app crashes</td><td>Crash logs, diagnostics, device information</td></tr>
+        <tr><td>Google Firebase Remote Config</td><td>Deliver app configuration</td><td>Device/app identifiers, diagnostics</td></tr>
+        <tr><td>Firebase Realtime Database</td><td>Support app configuration and analytics features</td><td>App interactions, diagnostics</td></tr>
+        <tr><td>AppsFlyer</td><td>Measure install attribution and marketing performance</td><td>Device/advertising identifiers, app interactions</td></tr>
+        <tr><td>Adjust</td><td>Measure install attribution and marketing performance</td><td>Device/advertising identifiers, app interactions</td></tr>
+        <tr><td>Facebook SDK (Meta)</td><td>Advertising and attribution measurement</td><td>Advertising identifier, device/app identifiers</td></tr>
+        <tr><td>Google AdMob and mediation partners (AppLovin, Vungle/DT Exchange, Mintegral, Unity Ads, Pangle)</td><td>Ad-related SDK infrastructure bundled with the App</td><td>Device/advertising identifiers, app interactions</td></tr>
+        <tr><td>Google Install Referrer</td><td>Attribute app installs to their source</td><td>Install referrer data, device identifiers</td></tr>
+      </tbody>
+    </table>
+    <p>These SDKs are integrated into the App and initialize automatically when the App starts, even in builds
+    where no ad is currently being displayed. As a result, <strong>advertising, analytics, attribution, and
+    crash-reporting data collection may occur regardless of whether you see an advertisement</strong>. We do
+    not control, and are not responsible for, how these third parties further process the data they collect;
+    please refer to each provider's own privacy policy for details:</p>
+    <ul>
+      <li>Google / Firebase / AdMob: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></li>
+      <li>AppsFlyer: <a href="https://www.appsflyer.com/legal/privacy-policy/" target="_blank" rel="noopener">appsflyer.com/legal/privacy-policy</a></li>
+      <li>Adjust: <a href="https://www.adjust.com/terms/privacy-policy/" target="_blank" rel="noopener">adjust.com/terms/privacy-policy</a></li>
+      <li>Meta (Facebook SDK): <a href="https://www.facebook.com/privacy/policy/" target="_blank" rel="noopener">facebook.com/privacy/policy</a></li>
+      <li>AppLovin: <a href="https://www.applovin.com/privacy/" target="_blank" rel="noopener">applovin.com/privacy</a></li>
+      <li>Unity Ads: <a href="https://unity.com/legal/privacy-policy" target="_blank" rel="noopener">unity.com/legal/privacy-policy</a></li>
+    </ul>
+
+    <h3>What is shared, and why</h3>
+    <p>Advertising and attribution SDKs listed above (AdMob and its mediation partners, AppsFlyer, Adjust, and
+    the Facebook SDK) <strong>receive and may share your device's advertising identifier and related
+    identifiers with their own networks and partners</strong>, for the purpose of advertising measurement and
+    marketing attribution. Analytics and crash-reporting SDKs (Firebase Analytics, Crashlytics, Remote Config,
+    Realtime Database) send diagnostic and usage data to Google for the purpose of app analytics and stability
+    monitoring. We do not sell your personal information.</p>
+
+    <h3>EEA / UK users — consent</h3>
+    <p>For users in the European Economic Area and the UK, the App uses Google's User Messaging Platform (UMP)
+    to present a consent request before any applicable advertising or measurement SDK uses your data for
+    personalized advertising purposes, in line with applicable law. You can change your choice at any time
+    from the consent/privacy option inside the App (where shown) or by resetting ad personalization in your
+    device's Google Settings.</p>
+
+    <h2>3. Information we do NOT collect</h2>
+    <ul>
+      <li><strong>No account or sign-in.</strong> Caller ID Guard does not require you to create an account,
+      sign in, or provide an email address, phone number, or password to the App itself. We do not collect
+      account credentials because none exist.</li>
+      <li><strong>No in-app purchases.</strong> All features of the App are available for free; the App does
+      not process payments or collect billing/payment information.</li>
+      <li><strong>No content you create is hosted by us.</strong> The App does not upload your call log,
+      contacts, or message previews to any server we operate.</li>
+    </ul>
+
+    <h2>4. Permissions summary</h2>
+    <table>
+      <thead><tr><th>Permission / capability</th><th>Used for</th></tr></thead>
+      <tbody>
+        <tr><td>Phone (call log, call state, in-call control, dialer)</td><td>Caller-ID, call history, placing/answering/declining calls</td></tr>
+        <tr><td>Contacts (read/write)</td><td>Showing caller names, viewing/adding/editing contacts</td></tr>
+        <tr><td>Notification access</td><td>"Unseen" message-preview feature</td></tr>
+        <tr><td>Post notifications</td><td>Alerting you to incoming calls and spam warnings</td></tr>
+        <tr><td>Foreground service (phone call)</td><td>Keeping the in-call screen and dialer service running during a call</td></tr>
+        <tr><td>Full-screen intent</td><td>Showing the incoming-call screen when the device is locked</td></tr>
+      </tbody>
+    </table>
+    <p>We request each permission only for the feature it supports, as described above. We do not request
+    location, SMS, storage-wide access, or accessibility-service permissions.</p>
+
+    <h2>5. Advertising identifier and your choices</h2>
+    <p>Your device's advertising identifier may be accessed by the advertising/attribution SDKs listed in
+    Section 2. You can reset or limit use of your advertising identifier at any time from your device Settings
+    (Settings &rarr; Privacy &rarr; Ads, or Google Settings &rarr; Ads, depending on your Android version).</p>
+
+    <h2>6. Data retention and deletion</h2>
+    <p>On-device data described in Section 1 (call log, contacts, notification previews) is stored only on
+    your device and is controlled entirely by you and your device's operating system; it is removed when you
+    clear the App's data or uninstall the App. Diagnostic and advertising-identifier data collected by the
+    third-party SDKs in Section 2 is retained by those providers according to their own retention policies.
+    Because the App does not use accounts, there is no "delete my account" process; to stop all data
+    processing by the App, uninstall it from your device.</p>
+
+    <h2>7. Children's privacy</h2>
+    <p>Caller ID Guard is not directed at children and is not designed to attract children as its primary
+    audience. We do not knowingly collect personal information from children. If you believe a child has
+    provided information through a third-party SDK described above, please contact us at the address below so
+    we can address it.</p>
+
+    <h2>8. Security</h2>
+    <p>Data transmitted by the third-party SDKs described in Section 2 is sent using industry-standard
+    encryption in transit (HTTPS/TLS). No method of transmission or storage is 100% secure, and we cannot
+    guarantee absolute security.</p>
+
+    <h2>9. Your rights</h2>
+    <p>Depending on your location, you may have rights to access, correct, delete, or restrict processing of
+    your personal data held by the third-party providers listed in Section 2, and to object to processing for
+    advertising purposes. To exercise these rights with respect to data those providers hold, please contact
+    the relevant provider directly using the links in Section 2, or contact us at the address below and we
+    will assist where we are able to.</p>
+
+    <h2>10. Changes to this Policy</h2>
+    <p>We may update this Privacy Policy from time to time to reflect changes in the App or in applicable law.
+    We will post the updated Policy at this URL with a revised effective date. Continued use of the App after
+    a change becomes effective constitutes acceptance of the updated Policy.</p>
+
+    <h2>11. Contact us</h2>
+    <p>If you have questions about this Privacy Policy or the App's data practices, contact:</p>
+    <p><strong>Nước Sạch</strong><br>Email: <a href="mailto:minhhang68930@gmail.com">minhhang68930@gmail.com</a></p>
+  </div>
+
+  <footer>
+    <p>Caller ID Guard &middot; Nước Sạch &middot; <a href="../terms/">Terms of Use</a></p>
+  </footer>
+</div>
+</body>
+</html>
